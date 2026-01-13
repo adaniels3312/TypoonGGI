@@ -181,6 +181,125 @@ body {
   color: #222;
 }
 
+/* ================================
+   SIGNATURE CREATIVE OUTPUTS
+================================ */
+
+.creative-drops {
+  position: relative;
+  padding: 80px 8%;
+  background: #0b0b0b;
+  color: #fff;
+  overflow: hidden;
+}
+
+.drops-title {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.drops-sub {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 60px;
+  font-size: 1.1rem;
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+/* GRID */
+.drops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* CARD */
+.drop-card {
+  background: #121212;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 0 rgba(0, 140, 255, 0);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.drop-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(0, 140, 255, 0.25);
+}
+
+/* IMAGE */
+.drop-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.drop-image img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.drop-card:hover img {
+  transform: scale(1.08);
+}
+
+/* DROP BADGE */
+.drop-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: linear-gradient(135deg, #00aaff, #0066ff);
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* TEXT */
+.drop-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.drop-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+  margin-bottom: 14px;
+}
+
+/* TAG */
+.drop-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 14px;
+  background: rgba(0, 170, 255, 0.15);
+  color: #00aaff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .drops-title {
+    font-size: 2.2rem;
+  }
+
+  .drop-image img {
+    height: 260px;
+  }
+}
+
+
 /* Simple styling for the buy button */
 .buy-button {
   display: inline-block;
