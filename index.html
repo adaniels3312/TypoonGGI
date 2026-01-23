@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
+<script>
+    const aboutSection = document.querySelector('.about-section');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.35 });
+  
+    observer.observe(aboutSection);
+  </script>
+  
+
 <body>
 
     <!-- NAV BAR -->
@@ -208,6 +223,8 @@
         </div>
 
         <!-- ABOUT SECTION -->
+        <div class="about-section spin-reveal">
+
         <div class="about-section">
             <div class="about-image">
                 <img src="images/typee.JPG" alt="Your Photo">
