@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<script>
-    const aboutSection = document.querySelector('.about-section');
-  
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, { threshold: 0.35 });
-  
-    observer.observe(aboutSection);
-  </script>
-  
-
 <body>
 
     <!-- NAV BAR -->
@@ -76,65 +61,68 @@
             <a href="https://ggistudios.myshopify.com/products/camo-hat" class="cat">Headwear</a>
             <a href="https://ggistudios.myshopify.com/products/ggi-airpod" class="cat">Tech Gear</a>
             <a href="https://ggistudios.myshopify.com/products/athletic-joggers" class="cat">Athletics</a>
-            <a href="https://ggistudios.myshopify.com/products/corduroy-embroidered-cap-vintage-iconic-multi-color-lettering" class="cat hot">Limited Drops🔥</a>
+            <a href="https://ggistudios.myshopify.com/products/corduroy-embroidered-cap-vintage-iconic-multi-color-lettering"
+                class="cat hot">Limited Drops🔥</a>
         </div>
 
     </section>
 
     <!-- SIGNATURE CREATIVE OUTPUTS -->
-<section class="creative-drops">
+    <section class="creative-drops">
 
-    <h1 class="drops-title">Signature Drops</h1>
-    <p class="drops-sub">
-        Culture. Identity. City energy.
-    </p>
+        <h1 class="drops-title">Signature Drops</h1>
+        <p class="drops-sub">
+            Culture. Identity. City energy.
+        </p>
 
-    <div class="drops-grid">
+        <div class="drops-grid">
 
-        <!-- DROP 01 -->
-        <div class="drop-card">
-            <div class="drop-image">
-                <img src="images/Blue Modern Minimalist Fashion Coming Soon Instagram Story.mp4" alt="Concept Poster">
-                <span class="drop-badge">DROP 1</span>
+            <!-- DROP 01 -->
+            <div class="drop-card">
+                <div class="drop-image">
+                    <img src="images/Blue Modern Minimalist Fashion Coming Soon Instagram Story.mp4"
+                        alt="Concept Poster">
+                    <span class="drop-badge">DROP 1</span>
+                </div>
+                <h2>Drop 1— Social Tension</h2>
+                <p>
+                    A poster series exploring gentrification, identity,
+                    and the cost of “progress” in modern cities.
+                </p>
+                <span class="drop-tag">Social Issues</span>
             </div>
-            <h2>Drop 1— Social Tension</h2>
-            <p>
-                A poster series exploring gentrification, identity,
-                and the cost of “progress” in modern cities.
-            </p>
-            <span class="drop-tag">Social Issues</span>
+
+            <!-- DROP 02 -->
+            <div class="drop-card">
+                <div class="drop-image">
+                    <img src="images/Blue Modern Minimalist Fashion Coming Soon Instagram Story.mp4" alt="Music Poster">
+                    <span class="drop-badge">DROP 2</span>
+                </div>
+                <h2>Drop 2— Sound in Visual Form</h2>
+                <p>
+                    Album-inspired posters, lyric-based visuals,
+                    and tour-style graphics.
+                </p>
+                <span class="drop-tag">Music Culture</span>
+            </div>
+
+            <!-- DROP 03 -->
+            <div class="drop-card">
+                <div class="drop-image">
+                    <img src="images/Blue Modern Minimalist Fashion Coming Soon Instagram Story.mp4"
+                        alt="City Life Poster">
+                    <span class="drop-badge">DROP 3</span>
+                </div>
+                <h2> Drop 3— City Language</h2>
+                <p>
+                    Everyday urban symbolism.
+                </p>
+                <span class="drop-tag">City Life</span>
+            </div>
+
         </div>
 
-        <!-- DROP 02 -->
-        <div class="drop-card">
-            <div class="drop-image">
-                <img src="images/Blue Modern Minimalist Fashion Coming Soon Instagram Story.mp4" alt="Music Poster">
-                <span class="drop-badge">DROP 2</span>
-            </div>
-            <h2>Drop 2— Sound in Visual Form</h2>
-            <p>
-                Album-inspired posters, lyric-based visuals,
-                and tour-style graphics.
-            </p>
-            <span class="drop-tag">Music Culture</span>
-        </div>
-
-        <!-- DROP 03 -->
-        <div class="drop-card">
-            <div class="drop-image">
-                <img src="images/Blue Modern Minimalist Fashion Coming Soon Instagram Story.mp4" alt="City Life Poster">
-                <span class="drop-badge">DROP 3</span>
-            </div>
-            <h2> Drop 3— City Language</h2>
-            <p>
-                Everyday urban symbolism.
-            </p>
-            <span class="drop-tag">City Life</span>
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
     <!-- NEW ARRIVALS -->
     <div class="section-wrapper">
@@ -222,27 +210,37 @@
 
         </div>
 
-        <!-- ABOUT SECTION -->
-        <div class="about-section spin-reveal">
+        <!-- ABOUT SECTION (ANIMATED CARD) -->
+        <section class="about-section">
+            <div class="about-card">
+                <div class="about-card-inner">
 
-        <div class="about-section">
-            <div class="about-image">
-                <img src="images/typee.JPG" alt="Your Photo">
+                    <!-- FRONT (PHOTO / VINYL) -->
+                    <div class="about-card-front">
+                        <div class="vinyl-orbit">
+                            <img src="images/typee.JPG" alt="Tony Typoon">
+                        </div>
+                        <h2>Tony Typoon</h2>
+                        <span class="about-hint">Hover to flip</span>
+                    </div>
+
+                    <!-- BACK (STORY) -->
+                    <div class="about-card-back">
+                        <h2>About Me</h2>
+                        <p>
+                            Hey, I’m Tony Typoon — entrepreneur and graphic designer based in
+                            Chattanooga, TN. I build culture-driven visuals, brands, and systems
+                            with intention, energy, and identity at the core.
+                        </p>
+                        <p>
+                            GGI isn’t just a brand — it’s a mindset.
+                        </p>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-            <div class="about-content">
-                <h1>About Me</h1>
-                <p>
-                    Hey Im Tony Typoon, entrepreneur based in Chattanooga, TN,
-                    with a focus on graphic design.
-                </p>
-                <p>
-                    ...
-                </p>
-            </div>
-        </div>
-
-    </div> <!-- ✅ section-wrapper properly closed -->
 
 </body>
 
