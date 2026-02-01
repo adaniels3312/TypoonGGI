@@ -321,6 +321,129 @@ body {
   filter: blur(120px);
 }
 
+/* ================================
+   GGI STUDIOS SERVICES
+================================ */
+
+.ggi-studios-services {
+  position: relative;
+  padding: 120px 8%;
+  background: #050505;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* glow aura */
+.services-glow {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,170,255,0.35), transparent 70%);
+  transform: translateX(-50%);
+  filter: blur(140px);
+  z-index: 0;
+}
+
+/* titles */
+.services-title {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.services-sub {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* manifesto text */
+.services-manifesto {
+  max-width: 720px;
+  margin: 0 auto 70px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #cfcfcf;
+  position: relative;
+  z-index: 1;
+}
+
+/* grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+/* cards */
+.service-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 36px 30px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 40px rgba(0,170,255,0.45);
+}
+
+/* card text */
+.service-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* CTA */
+.services-cta {
+  display: inline-block;
+  margin-top: 70px;
+  padding: 16px 46px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  border: 2px solid #00aaff;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.services-cta:hover {
+  background: #00aaff;
+  box-shadow: 0 0 30px rgba(0,170,255,0.7);
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .services-title {
+    font-size: 2.3rem;
+  }
+
+  .services-manifesto {
+    font-size: 1rem;
+  }
+}
+
 /* Titles */
 .pass-title {
   font-size: 3rem;
