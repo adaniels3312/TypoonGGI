@@ -299,6 +299,116 @@ body {
   }
 }
 
+/* ===== GGI COLLECTIVE PASS ===== */
+.ggi-pass {
+  position: relative;
+  padding: 120px 8%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Glow aura */
+.pass-glow {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,160,255,0.35), transparent 70%);
+  transform: translateX(-50%);
+  filter: blur(120px);
+}
+
+/* Titles */
+.pass-title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.pass-sub {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid */
+.pass-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Cards */
+.pass-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 40px 30px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  backdrop-filter: blur(8px);
+}
+
+.pass-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 40px rgba(0,160,255,0.45);
+}
+
+/* Icons */
+.pass-icon {
+  font-size: 2.2rem;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+/* Text */
+.pass-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.pass-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* CTA */
+.pass-cta {
+  display: inline-block;
+  margin-top: 70px;
+  padding: 16px 44px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  border: 2px solid #00a0ff;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.pass-cta:hover {
+  background: #00a0ff;
+  box-shadow: 0 0 30px rgba(0,160,255,0.7);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .pass-title {
+    font-size: 2.2rem;
+  }
+}
+
 
 /* Simple styling for the buy button */
 .buy-button {
