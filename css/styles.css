@@ -986,6 +986,54 @@ body {
   transform: rotateY(180deg) rotateX(6deg);
 }
 
+/* ===== COLLECTIVE DROPDOWN ===== */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 12px 0;
+  list-style: none;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* show on hover */
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(6px);
+}
+
+/* dropdown links */
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 22px;
+  color: #dcdcdc;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* hover effect */
+.dropdown-menu li a:hover {
+  background: rgba(0, 170, 255, 0.18);
+  color: #00aaff;
+}
+
 /* ===== FRONT / BACK ===== */
 .about-card-front,
 .about-card-back {
@@ -1062,13 +1110,26 @@ body {
 
 /* ===== ANIMATIONS ===== */
 @keyframes vinylSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* reuse your GGI electric animation */
 @keyframes electric {
-  0% { box-shadow: 0 0 10px #00aaff; }
-  50% { box-shadow: 0 0 35px #00ddff; }
-  100% { box-shadow: 0 0 10px #00aaff; }
+  0% {
+    box-shadow: 0 0 10px #00aaff;
+  }
+
+  50% {
+    box-shadow: 0 0 35px #00ddff;
+  }
+
+  100% {
+    box-shadow: 0 0 10px #00aaff;
+  }
 }
