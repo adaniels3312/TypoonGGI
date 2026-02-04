@@ -24,10 +24,21 @@ body {
   padding: 12px 0;
 }
 
-.ggi-collective { background: #000; }
-.ggi-studios-services { background: #050505; }
-.creative-drops { background: #0b0b0b; }
-.section-wrapper { background: #111; }
+.ggi-collective {
+  background: #000;
+}
+
+.ggi-studios-services {
+  background: #050505;
+}
+
+.creative-drops {
+  background: #0b0b0b;
+}
+
+.section-wrapper {
+  background: #111;
+}
 
 .nav-bar ul {
   display: flex;
@@ -322,7 +333,7 @@ body {
   left: 50%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(0,160,255,0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 160, 255, 0.35), transparent 70%);
   transform: translateX(-50%);
   filter: blur(120px);
 }
@@ -347,7 +358,7 @@ body {
   left: 50%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(0,170,255,0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 170, 255, 0.35), transparent 70%);
   transform: translateX(-50%);
   filter: blur(140px);
   z-index: 0;
@@ -392,8 +403,8 @@ body {
 
 /* cards */
 .service-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 18px;
   padding: 36px 30px;
   backdrop-filter: blur(10px);
@@ -402,7 +413,7 @@ body {
 
 .service-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 0 40px rgba(0,170,255,0.45);
+  box-shadow: 0 0 40px rgba(0, 170, 255, 0.45);
 }
 
 /* card text */
@@ -436,7 +447,7 @@ body {
 
 .services-cta:hover {
   background: #00aaff;
-  box-shadow: 0 0 30px rgba(0,170,255,0.7);
+  box-shadow: 0 0 30px rgba(0, 170, 255, 0.7);
 }
 
 /* mobile */
@@ -478,8 +489,8 @@ body {
 
 /* Cards */
 .pass-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 18px;
   padding: 40px 30px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -488,7 +499,7 @@ body {
 
 .pass-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 0 40px rgba(0,160,255,0.45);
+  box-shadow: 0 0 40px rgba(0, 160, 255, 0.45);
 }
 
 /* Icons */
@@ -528,7 +539,7 @@ body {
 
 .pass-cta:hover {
   background: #00a0ff;
-  box-shadow: 0 0 30px rgba(0,160,255,0.7);
+  box-shadow: 0 0 30px rgba(0, 160, 255, 0.7);
 }
 
 /* Mobile */
@@ -893,13 +904,11 @@ body {
   position: absolute;
   inset: 0;
   background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(255,255,255,0.02),
-      rgba(255,255,255,0.02) 1px,
+    repeating-linear-gradient(0deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.02) 1px,
       transparent 1px,
-      transparent 2px
-    );
+      transparent 2px);
   opacity: 0;
   transition: opacity 1.2s ease;
   pointer-events: none;
@@ -920,9 +929,17 @@ body {
   transform: translateY(0);
 }
 
-.creative-drops.scene-active .drop-card:nth-child(1) { transition-delay: .1s; }
-.creative-drops.scene-active .drop-card:nth-child(2) { transition-delay: .25s; }
-.creative-drops.scene-active .drop-card:nth-child(3) { transition-delay: .4s; }
+.creative-drops.scene-active .drop-card:nth-child(1) {
+  transition-delay: .1s;
+}
+
+.creative-drops.scene-active .drop-card:nth-child(2) {
+  transition-delay: .25s;
+}
+
+.creative-drops.scene-active .drop-card:nth-child(3) {
+  transition-delay: .4s;
+}
 
 .ggi-title {
   font-size: 2.4rem;
@@ -949,7 +966,7 @@ body {
   height: 100%;
   background: #0a0a0a;
   z-index: 5;
-  transition: transform 1.4s cubic-bezier(.77,0,.18,1);
+  transition: transform 1.4s cubic-bezier(.77, 0, .18, 1);
 }
 
 .warehouse::before {
