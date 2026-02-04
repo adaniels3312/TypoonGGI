@@ -6,6 +6,7 @@
   font-family: Arial, sans-serif;
 }
 
+
 /* BODY */
 body {
   background: #d9d9d9;
@@ -22,6 +23,11 @@ body {
   z-index: 50;
   padding: 12px 0;
 }
+
+.ggi-collective { background: #000; }
+.ggi-studios-services { background: #050505; }
+.creative-drops { background: #0b0b0b; }
+.section-wrapper { background: #111; }
 
 .nav-bar ul {
   display: flex;
@@ -861,13 +867,62 @@ body {
 /* ---------- GGI SECTION ---------- */
 
 .ggi-collective {
-  text-align: center;
-  padding: 60px 20px;
-  position: relative;
-  background: #000;
-  color: #fff;
-  overflow: hidden;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
 }
+
+.ggi-collective.scene-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.blue-flame-anim {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 1s ease 0.4s, transform 1s ease 0.4s;
+}
+
+.ggi-collective.scene-active .blue-flame-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.creative-drops::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.02),
+      rgba(255,255,255,0.02) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+}
+
+.creative-drops.scene-active::before {
+  opacity: 1;
+}
+
+.drop-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.creative-drops.scene-active .drop-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.creative-drops.scene-active .drop-card:nth-child(1) { transition-delay: .1s; }
+.creative-drops.scene-active .drop-card:nth-child(2) { transition-delay: .25s; }
+.creative-drops.scene-active .drop-card:nth-child(3) { transition-delay: .4s; }
 
 .ggi-title {
   font-size: 2.4rem;
@@ -878,6 +933,41 @@ body {
 .ggi-sub {
   opacity: .7;
   margin-bottom: 20px;
+}
+
+.warehouse {
+  position: relative;
+  overflow: hidden;
+}
+
+.warehouse::before,
+.warehouse::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #0a0a0a;
+  z-index: 5;
+  transition: transform 1.4s cubic-bezier(.77,0,.18,1);
+}
+
+.warehouse::before {
+  left: 0;
+  transform: translateX(0);
+}
+
+.warehouse::after {
+  right: 0;
+  transform: translateX(0);
+}
+
+.section-wrapper.scene-active .warehouse::before {
+  transform: translateX(-110%);
+}
+
+.section-wrapper.scene-active .warehouse::after {
+  transform: translateX(110%);
 }
 
 /* Blue flame animation */
@@ -1339,6 +1429,14 @@ body {
 /* ===== FAKE PARALLAX TILT ===== */
 .about-card:hover {
   transform: translateY(-10px);
+}
+
+.video-header {
+  transition: filter 1.2s ease, opacity 1.2s ease;
+}
+
+.video-header.scene-active {
+  filter: brightness(60%);
 }
 
 /* ===== ANIMATIONS ===== */
