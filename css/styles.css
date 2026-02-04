@@ -111,25 +111,10 @@ body {
 }
 
 @keyframes fadeSlide {
-  0% {
-    opacity: 0;
-    transform: translate(-60%, -50%);
-  }
-
-  40% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-
-  70% {
-    opacity: 1;
-    transform: translate(-40%, -50%);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translate(-30%, -50%);
-  }
+  0% { opacity: 0; transform: translate(-60%, -50%); }
+  40% { opacity: 1; transform: translate(-50%, -50%); }
+  70% { opacity: 1; transform: translate(-40%, -50%); }
+  100% { opacity: 0; transform: translate(-30%, -50%); }
 }
 
 /* =====================================================
@@ -153,25 +138,18 @@ body {
   white-space: nowrap;
 }
 
-.spiral-text h1 {
-  font-size: 4rem;
-}
-
-.spiral-text p {
-  font-size: 2rem;
-}
+.spiral-text h1 { font-size: 4rem; }
+.spiral-text p  { font-size: 2rem; }
 
 @keyframes spiralMove {
   0% {
     transform: translate(-50%, -50%) rotate(0deg) scale(1);
     opacity: 1;
   }
-
   60% {
     transform: translate(40%, 60%) rotate(240deg) scale(1.25);
     opacity: 0.85;
   }
-
   100% {
     transform: translate(120%, 140%) rotate(360deg) scale(1.35);
     opacity: 0;
@@ -217,15 +195,7 @@ body {
    ELECTRIC ANIMATION (SINGLE DEFINITION)
 ===================================================== */
 @keyframes electric {
-  0% {
-    box-shadow: 0 0 10px #00aaff;
-  }
-
-  50% {
-    box-shadow: 0 0 35px #00ddff;
-  }
-
-  100% {
-    box-shadow: 0 0 10px #00aaff;
-  }
+  0% { box-shadow: 0 0 10px #00aaff; }
+  50% { box-shadow: 0 0 35px #00ddff; }
+  100% { box-shadow: 0 0 10px #00aaff; }
 }
