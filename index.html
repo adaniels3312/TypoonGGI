@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typoon Industries</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -36,8 +37,10 @@
         <video class="header-video" autoplay muted loop playsinline>
             <source src="images/TYheader.mp4" type="video/mp4">
         </video>
-        <h1 class="header-title"></h1>
-        <p class="header-sub">Creators of the GGI Collective</p>
+        <div class="hero-overlay">
+            <h1 class="header-title animate-fade">Typoon Industries</h1>
+            <p class="header-sub animate-fade-delay">Creators of the GGI Collective</p>
+        </div>
     </header>
 
     <hr>
@@ -45,24 +48,23 @@
     <!-- GGI COLLECTIVE SECTION -->
     <section class="ggi-collective">
         <div class="blue-flame-anim"></div>
-        <h1 class="ggi-title">GGI • Gotta Get It Collective</h1>
-        <p class="ggi-sub">
-            A high-energy street division focused on purpose, identity, and calling under Typoon Industries
-        </p>
+        <h1 class="ggi-title animate-up">GGI • Gotta Get It Collective</h1>
+        <p class="ggi-sub animate-up-delay">A high-energy street division focused on purpose, identity, and calling
+            under Typoon Industries</p>
 
         <div class="ggi-logo-row">
-            <div class="ggi-logo-box flame-glow">
+            <div class="ggi-logo-box flame-glow animate-scale">
                 <img src="images/plaidggitee.jpg" alt="Coming Soon">
             </div>
-            <div class="ggi-logo-box electric-glow">
+            <div class="ggi-logo-box electric-glow animate-scale-delay">
                 <img src="images/ggichampphonecase.jpg" alt="GGI Logo Concept 2">
             </div>
-            <div class="ggi-logo-box flame-glow">
+            <div class="ggi-logo-box flame-glow animate-scale">
                 <img src="images/FolderGGIhoodie.jpg" alt="Coming Soon">
             </div>
         </div>
 
-        <div class="ggi-categories">
+        <div class="ggi-categories animate-up">
             <a href="https://ggistudios.myshopify.com/products/t-shirt" class="cat">Streetwear</a>
             <a href="https://ggistudios.myshopify.com/products/camo-hat" class="cat">Headwear</a>
             <a href="https://ggistudios.myshopify.com/products/ggi-airpod" class="cat">Tech Gear</a>
@@ -75,51 +77,44 @@
     <!-- GGI STUDIOS SERVICES -->
     <section class="ggi-studios-services" id="services">
         <div class="services-glow"></div>
-        <h1 class="services-title">GGI Studios</h1>
-        <p class="services-sub">Culture-first branding for creators and hustlers.</p>
-
-        <p class="services-manifesto">
-            GGI Studios is the creative arm of the collective. We build brands, visuals, and systems rooted in identity,
-            movement, and real-world culture — not trends.
-            <br><br>
-            This site is the proof.
-        </p>
+        <h1 class="services-title animate-up">GGI Studios</h1>
+        <p class="services-sub animate-up-delay">Culture-first branding for creators and hustlers.</p>
+        <p class="services-manifesto animate-up-delay">GGI Studios is the creative arm of the collective. We build
+            brands, visuals, and systems rooted in identity, movement, and real-world culture — not trends.<br><br>This
+            site is the proof.</p>
 
         <div class="services-grid">
-            <div class="service-card">
+            <div class="service-card animate-scale-hover">
                 <h2>Branding for Small Businesses</h2>
                 <p>Logos, visual systems, brand identity, and rollout strategy built for people starting from the ground
                     up.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-scale-hover">
                 <h2>Album Covers</h2>
                 <p>Culture-driven cover art and visual direction for artists who want their sound seen.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-scale-hover">
                 <h2>Merch Design for Artists</h2>
                 <p>Wearable visuals — from concept to print — designed to move units and tell stories.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-scale-hover">
                 <h2>Event Visuals</h2>
                 <p>Posters, flyers, stage visuals, and promo graphics that feel alive before the doors even open.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-scale-hover">
                 <h2>Website Design Templates</h2>
                 <p>Clean, high-energy website layouts for creators, brands, and collectives — just like this one.</p>
             </div>
         </div>
-
-        <a href="contact.html" class="services-cta">Build With GGI</a>
+        <a href="contact.html" class="services-cta animate-fade-hover">Build With GGI</a>
     </section>
 
-    <!-- SIGNATURE CREATIVE OUTPUTS -->
+    <!-- CREATIVE DROPS -->
     <section class="creative-drops">
-        <h1 class="drops-title">Signature Drops</h1>
-        <p class="drops-sub">Culture. Identity. City energy.</p>
-
+        <h1 class="drops-title animate-up">Signature Drops</h1>
+        <p class="drops-sub animate-up-delay">Culture. Identity. City energy.</p>
         <div class="drops-grid">
-            <!-- DROP 01 -->
-            <div class="drop-card">
+            <div class="drop-card animate-scale-hover">
                 <div class="drop-image">
                     <img src="images/drop1.jpg" alt="Concept Poster">
                     <span class="drop-badge">DROP 1</span>
@@ -128,9 +123,7 @@
                 <p>A poster series exploring gentrification, identity, and the cost of “progress” in modern cities.</p>
                 <span class="drop-tag">Social Issues</span>
             </div>
-
-            <!-- DROP 02 -->
-            <div class="drop-card">
+            <div class="drop-card animate-scale-hover">
                 <div class="drop-image">
                     <img src="images/drop2.jpg" alt="Music Poster">
                     <span class="drop-badge">DROP 2</span>
@@ -139,9 +132,7 @@
                 <p>Album-inspired posters, lyric-based visuals, and tour-style graphics.</p>
                 <span class="drop-tag">Music Culture</span>
             </div>
-
-            <!-- DROP 03 -->
-            <div class="drop-card">
+            <div class="drop-card animate-scale-hover">
                 <div class="drop-image">
                     <img src="images/drop3.jpg" alt="City Life Poster">
                     <span class="drop-badge">DROP 3</span>
@@ -155,16 +146,10 @@
 
     <!-- NEW ARRIVALS -->
     <section class="section-wrapper">
-        <div class="ant"></div>
-        <div class="ant"></div>
-        <div class="ant"></div>
-        <div class="ant"></div>
-        <div class="ant"></div>
-
-        <h1>New Arrivals</h1>
+        <h1 class="animate-up">New Arrivals</h1>
         <div class="grid">
             <!-- Example Item -->
-            <div class="item">
+            <div class="item animate-scale-hover">
                 <a href="https://ggistudios.myshopify.com/products/long-sleeve-sweater">
                     <img src="images/GGIsweaterblue.jpg" alt="Minimalist Tee">
                     <div class="info">
@@ -172,202 +157,16 @@
                         <p>$56.99</p>
                     </div>
                 </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/long-sleeve-sweater"
-                    target="_blank">Buy Now</a>
+                <a class="buy-button animate-fade-hover"
+                    href="https://ggistudios.myshopify.com/products/long-sleeve-sweater" target="_blank">Buy Now</a>
             </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/unisex-zip-hoodie-aop">
-                    <img src="images/ggimultiple.jpg" alt="Hoodie">
-                    <div class="info">
-                        <h2>Hoodie</h2>
-                        <p>$111.7</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/long-sleeve-sweater"
-                    target="_blank">Buy Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/sweatpants" target="_blank">
-                    <img src="images/GGI SWeatPantsBlue.jpg" alt="Accessories">
-                    <div class="info">
-                        <h2>Sweat Pants</h2>
-                        <p>$69.39</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/sweatpants" target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/trucker-cap" target="_blank">
-                    <img src="images/blueggitruckcap.jpg" alt="Accessories">
-                    <div class="info">
-                        <h2>Trucker Cap</h2>
-                        <p>$29.39</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/trucker-cap" target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/sweatpants-1" target="_blank">
-                    <img src="images/orange black ggi sweatpantsfront.jpg" alt="Accessories">
-                    <div class="info">
-                        <h2>Sweatpants</h2>
-                        <p>$65.39</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/sweatpants-1" target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/unisex-pullover-hoodie-aop" target="_blank">
-                    <img src="images/RAWBACK.jpg" alt="men">
-                    <div class="info">
-                        <h2>Hoodie</h2>
-                        <p>$101.69</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/unisex-pullover-hoodie-aop"
-                    target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/pineapple-scented-car-air-freshener-tropical-pineapple-design"
-                    target="_blank">
-                    <img src="images/freshner.jpg" alt="men">
-                    <div class="info">
-                        <h2>Air Freshner</h2>
-                        <p>$11.69</p>
-                    </div>
-                </a>
-                <a class="buy-button"
-                    href="https://ggistudios.myshopify.com/products/pineapple-scented-car-air-freshener-tropical-pineapple-design"
-                    target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/multifunctional-diaper-backpack" target="_blank">
-                    <img src="images/DIPERBAG.jpg" alt="men">
-                    <div class="info">
-                        <h2>Bag</h2>
-                        <p>$81.69</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/multifunctional-diaper-backpack"
-                    target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/shirt-1" target="_blank">
-                    <img src="images/fueled front.jpg" alt="Accessories">
-                    <div class="info">
-                        <h2>Fueled Shirt</h2>
-                        <p>$12.55</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/shirt-1" target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/unisex-long-sleeve-t-shirt" target="_blank">
-                    <img src="images/BTVLONGSLEEVE.jpg" alt="Accessories">
-                    <div class="info">
-                        <h2>LONGSLEEVE</h2>
-                        <p>$22.23</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/unisex-long-sleeve-t-shirt"
-                    target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/three-panel-fleece-hoodie" target="_blank">
-                    <img src="images/packers2.jpg" alt="Hoodie">
-                    <div class="info">
-                        <h2>Hoodie</h2>
-                        <p>$42.99</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/three-panel-fleece-hoodie"
-                    target="_blank">Buy
-                    Now</a>
-            </div>
-
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/gotta-get-it-crewneck-sweatshirt-vintage-streetwear-graphic"
-                    target="_blank">
-                    <img src="images/CAUTION3.jpg" alt="Long Sleeve">
-                    <div class="info">
-                        <h2>Long Sleeve</h2>
-                        <p>$29.95</p>
-                    </div>
-                </a>
-                <a class="buy-button"
-                    href="https://ggistudios.myshopify.com/products/gotta-get-it-crewneck-sweatshirt-vintage-streetwear-graphic"
-                    target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/classic-white-crewneck-sweatshirt-comfortable-everyday-pullover"
-                    target="_blank">
-                    <img src="images/crimsontide.jpg" alt="Sweater">
-                    <div class="info">
-                        <h2>Sweater</h2>
-                        <p>$36.37</p>
-                    </div>
-                </a>
-                <a class="buy-button"
-                    href="https://ggistudios.myshopify.com/products/classic-white-crewneck-sweatshirt-comfortable-everyday-pullover"
-                    target="_blank">Buy
-                    Now</a>
-            </div>
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/beefy-t%C2%AE-short-sleeve-t-shirt" target="_blank">
-                    <img src="images/ali shirt2.jpg" alt="Accessories">
-                    <div class="info">
-                        <h2> Shirt</h2>
-                        <p>$25.55</p>
-                    </div>
-                </a>
-                <a class="buy-button"
-                    href="https://ggistudios.myshopify.com/products/beefy-t%C2%AE-short-sleeve-t-shirt"
-                    target="_blank">Buy
-                    Now</a>
-            </div>
-
-
-            <div class="item">
-                <a href="https://ggistudios.myshopify.com/products/welocome-in-doormat" target="_blank">
-                    <img src="images/doormatt3.jpg" alt="Accessories">
-                    <div class="info">
-                        <h2>Doormatt</h2>
-                        <p>$44.45</p>
-                    </div>
-                </a>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/welocome-in-doormat"
-                    target="_blank">Buy Now</a>
-            </div>
-
-            <!-- Repeat item blocks as needed... -->
+            <!-- Repeat for other products -->
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="about-section">
-        <div class="about-card">
+        <div class="about-card animate-flip-hover">
             <div class="about-card-inner">
                 <!-- FRONT -->
                 <div class="about-card-front">
@@ -377,7 +176,6 @@
                     <h2>Tony Typoon</h2>
                     <span class="about-hint">Hover to flip</span>
                 </div>
-
                 <!-- BACK -->
                 <div class="about-card-back">
                     <h2>About Me</h2>
@@ -390,6 +188,7 @@
         </div>
     </section>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
