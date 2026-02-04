@@ -213,7 +213,8 @@
         <div class="ant"></div>
         <div class="ant"></div>
 
-        <h1>New Arrivals</h1>
+        <div class="warehouse">
+            <h1>New Arrivals</h1>
 
         <div class="grid">
 
@@ -447,7 +448,23 @@
             </div>
         </section>
 
-
+        <script>
+            const sections = document.querySelectorAll("section");
+          
+            const observer = new IntersectionObserver(
+              entries => {
+                entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add("scene-active");
+                  }
+                });
+              },
+              { threshold: 0.35 }
+            );
+          
+            sections.forEach(section => observer.observe(section));
+          </script>
+          
 </body>
 
 </html>
