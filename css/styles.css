@@ -73,30 +73,6 @@ body {
 }
 
 /* ================================
-   NAV ANT
-================================ */
-.nav-ant {
-  position: absolute;
-  top: 50%;
-  left: -40px;
-  width: 24px;
-  height: 24px;
-  background: url('https://i.imgur.com/73Hk3sV.png') no-repeat center / contain;
-  transform: translateY(-50%);
-  animation: navCrawl 14s linear infinite;
-}
-
-@keyframes navCrawl {
-  from {
-    transform: translate(-50px, -50%) rotate(0deg);
-  }
-
-  to {
-    transform: translate(calc(100vw + 50px), -50%) rotate(360deg);
-  }
-}
-
-/* ================================
    HEADER VIDEO
 ================================ */
 .video-header {
