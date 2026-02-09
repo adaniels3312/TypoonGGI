@@ -133,6 +133,48 @@
 
 
     <script src="js/main.js"></script>
+    // ScrollReveal global config
+ScrollReveal({
+  distance: '60px',
+  duration: 900,
+  easing: 'cubic-bezier(0.5, 0, 0, 1)',
+  reset: false
+});
+
+// Fade in (hero title)
+ScrollReveal().reveal('.animate-fade', {
+  opacity: 0,
+  origin: 'bottom'
+});
+
+// Fade in with delay
+ScrollReveal().reveal('.animate-fade-delay', {
+  opacity: 0,
+  origin: 'bottom',
+  delay: 300
+});
+
+// Slide up sections
+ScrollReveal().reveal('.animate-up', {
+  opacity: 0,
+  origin: 'bottom',
+  interval: 120
+});
+
+// Optional delayed slide up
+ScrollReveal().reveal('.animate-up-delay', {
+  opacity: 0,
+  origin: 'bottom',
+  delay: 200
+});
+
+// Product cards / scale items
+ScrollReveal().reveal('.animate-scale-hover', {
+  scale: 0.92,
+  opacity: 0,
+  interval: 120
+});
+
 </body>
 
 </html>
