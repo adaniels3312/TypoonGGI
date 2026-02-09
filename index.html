@@ -2,135 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typoon Industries</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typoon Industries</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- ScrollReveal for animations -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-
-            <li class="nav-dropdown">
-                <a href="collective.html">Collective</a>
-                <ul class="dropdown-menu">
-                    <li><a href="collective.html#ggi">GGI Collective</a></li>
-                    <li><a href="collective.html#drops">Signature Drops</a></li>
-                    <li><a href="collective.html#membership">Membership Pass</a></li>
-                    <li><a href="collective.html#about">About GGI</a></li>
-                </ul>
-            </li>
+  <!-- NAVIGATION -->
+  <nav class="nav-bar">
+    <div class="logo">Typoon</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-dropdown">
+        <a href="collective.html">Collective</a>
+        <ul class="dropdown-menu">
+          <li><a href="collective.html#ggi">GGI Collective</a></li>
+          <li><a href="collective.html#drops">Signature Drops</a></li>
+          <li><a href="collective.html#membership">Membership Pass</a></li>
+          <li><a href="collective.html#about">About GGI</a></li>
         </ul>
-        <div class="nav-ant"></div>
-    </nav>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- HERO -->
-    <header class="video-header">
-        <video class="header-video" autoplay muted loop playsinline>
-            <source src="images/TYheader.mp4" type="video/mp4">
-        </video>
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="images/TYheader.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+      <h1 class="hero-title animate-fade">Typoon Industries</h1>
+      <p class="hero-sub animate-fade-delay">Identity is the product.<br>Culture is the currency.</p>
+      <div class="spiral-text" style="top:10%; left:20%;">GGI</div>
+      <div class="spiral-text" style="top:50%; left:80%;">Culture</div>
+      <div class="spiral-text" style="top:70%; left:40%;">Identity</div>
+    </div>
+  </header>
 
-        <div class="hero-overlay">
-            <h1 class="header-title animate-fade">Typoon Industries</h1>
-            <p class="header-sub animate-fade-delay">
-                Identity is the product.<br>
-                Culture is the currency.
-            </p>
+  <!-- MANIFESTO -->
+  <section class="section-wrapper manifesto">
+    <h2 class="animate-up">We Are Not a Brand</h2>
+    <p class="animate-up">
+      Typoon Industries is a collective of creators, designers, and builders.
+      We don’t chase trends — we document identity.
+      Every piece is a signal. Every drop is intentional.
+      This is culture in motion.
+    </p>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section-wrapper new-arrivals">
+    <p class="section-sub animate-up">Limited releases from the GGI Collective.</p>
+    <div class="grid">
+
+      <!-- PRODUCT 1 -->
+      <div class="item animate-scale-hover">
+        <img src="images/GGIsweaterblue.jpg" alt="GGI Long Sleeve Sweater">
+        <div class="info">
+          <h3>Long Sleeve</h3>
+          <p>$56.99</p>
         </div>
-    </header>
+        <a class="buy-button" href="https://ggistudios.myshopify.com/products/long-sleeve-sweater" target="_blank">
+          Enter the Drop
+        </a>
+      </div>
 
-    <section class="section-wrapper manifesto">
-        <h1 class="animate-up">We Are Not a Brand</h1>
-        <p class="animate-up">
-            Typoon Industries is a collective of creators, designers, and builders.
-            We don’t chase trends — we document identity.
-            Every piece is a signal. Every drop is intentional.
-            This is culture in motion.
-        </p>
-    </section>
-
-
-    <!-- NEW ARRIVALS -->
-    <section class="section-wrapper">
-        <p class="section-sub animate-up">
-            Limited releases from the GGI Collective.
-        </p>
-
-        <div class="grid">
-
-            <!-- ITEM 1 -->
-            <div class="item animate-scale-hover">
-                <img src="images/GGIsweaterblue.jpg" alt="GGI Long Sleeve Sweater">
-                <div class="info">
-                    <h2>Long Sleeve</h2>
-                    <p>$56.99</p>
-                </div>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/long-sleeve-sweater"
-                    target="_blank">
-                    Enter the Drop
-                </a>
-            </div>
-
-            <!-- ITEM 2 -->
-            <div class="item animate-scale-hover">
-                <img src="images/RedGGI.jpg" alt="GGI">
-                <div class="info">
-                    <h2>Designed to be worn, not explained</h2>
-                </div>
-                <a class="buy-button" href="#" target="_blank">
-                    Enter the Drop
-                </a>
-            </div>
-
-            <!-- ITEM 3 -->
-            <div class="item animate-scale-hover">
-                <img src="images/RAWBACK.jpg" alt="Hoodie">
-                <div class="info">
-                    <h2>Hoodie</h2>
-                    <p>$101.69</p>
-                </div>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/unisex-pullover-hoodie-aop"
-                    target="_blank">
-                    Enter the Drop
-                </a>
-            </div>
-
-            <!-- ITEM 4 -->
-            <div class="item animate-scale-hover">
-                <img src="images/doormatt3.jpg" alt="GGI Welcome Doormat">
-                <div class="info">
-                    <h2>Doormat</h2>
-                    <p>$44.45</p>
-                </div>
-                <a class="buy-button" href="https://ggistudios.myshopify.com/products/welocome-in-doormat"
-                    target="_blank">
-                    Enter the Drop
-                </a>
-            </div>
-
-            <!-- ITEM 5 -->
-            <div class="item animate-scale-hover">
-                <img src="images/Duck Brown-Model Front.png" alt="Jacket">
-                <div class="info">
-                    <h2>Jacket</h2>
-                    <p>$101.11</p>
-                </div>
-                <a class="buy-button"
-                    href="https://ggistudios.myshopify.com/products/embroidered-work-jacket-duck-cloth-utility-coat"
-                    target="_blank">
-                    Enter the Drop
-                </a>
-            </div>
-
+      <!-- PRODUCT 2 -->
+      <div class="item animate-scale-hover">
+        <img src="images/RedGGI.jpg" alt="GGI Design Tee">
+        <div class="info">
+          <h3>Designed to be worn, not explained</h3>
         </div>
-    </section>
+        <a class="buy-button" href="#" target="_blank">Enter the Drop</a>
+      </div>
 
+      <!-- PRODUCT 3 -->
+      <div class="item animate-scale-hover">
+        <img src="images/RAWBACK.jpg" alt="GGI Hoodie">
+        <div class="info">
+          <h3>Hoodie</h3>
+          <p>$101.69</p>
+        </div>
+        <a class="buy-button" href="https://ggistudios.myshopify.com/products/unisex-pullover-hoodie-aop"
+          target="_blank">Enter the Drop</a>
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="item animate-scale-hover">
+        <img src="images/doormatt3.jpg" alt="GGI Welcome Doormat">
+        <div class="info">
+          <h3>Doormat</h3>
+          <p>$44.45</p>
+        </div>
+        <a class="buy-button" href="https://ggistudios.myshopify.com/products/welocome-in-doormat"
+          target="_blank">Enter the Drop</a>
+      </div>
+
+      <!-- PRODUCT 5 -->
+      <div class="item animate-scale-hover">
+        <img src="images/Duck Brown-Model Front.png" alt="GGI Jacket">
+        <div class="info">
+          <h3>Jacket</h3>
+          <p>$101.11</p>
+        </div>
+        <a class="buy-button"
+          href="https://ggistudios.myshopify.com/products/embroidered-work-jacket-duck-cloth-utility-coat"
+          target="_blank">Enter the Drop</a>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
