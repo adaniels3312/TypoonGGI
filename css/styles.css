@@ -217,13 +217,4 @@ body {
   background: #e55a00;
 }
 
-/* =========================
-   ANIMATION HELPERS
-========================= */
-.animate-fade,
-.animate-up,
-.animate-fade-delay,
-.animate-up-delay,
-.animate-scale-hover {
-  visibility: hidden;
-}
+
