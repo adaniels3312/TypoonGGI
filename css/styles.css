@@ -1430,6 +1430,142 @@ body {
   }
 }
 
+/* GLOBAL STYLES */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  background: #f7f7f7;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; padding: 0; margin: 0; }
+
+/* NAVIGATION */
+.bio-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.bio-nav .logo { font-weight: bold; color: #fff; font-size: 1.5rem; }
+.bio-nav ul { display: flex; gap: 2rem; }
+.bio-nav li a { color: #fff; transition: 0.3s; }
+.bio-nav li a:hover { color: #00f; }
+
+/* HERO */
+.bio-hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-background {
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+.hero-content h1 { font-size: 3rem; color: #fff; margin-bottom: 1rem; }
+.hero-content p { font-size: 1.2rem; color: #fff; margin-bottom: 2rem; }
+.cta-btn {
+  background: #00f;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.cta-btn:hover { background: #0077ff; }
+
+/* SECTIONS */
+section { padding: 5rem 2rem; text-align: center; }
+h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+/* MISSION CARDS */
+.mission-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.mission-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.mission-card:hover { transform: scale(1.05); }
+
+/* ABOUT FLIP CARD */
+.bio-card { perspective: 1000px; display: inline-block; margin-top: 2rem; }
+.bio-card-inner {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.bio-card:hover .bio-card-inner { transform: rotateY(180deg); }
+.bio-front, .bio-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.bio-back { transform: rotateY(180deg); }
+
+/* PROJECT CARDS */
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.project-card {
+  width: 250px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.project-card:hover { transform: scale(1.05); }
+.project-card img { width: 100%; }
+
+/* CONTACT SECTION */
+.contact-section .cta-btn { margin-top: 1.5rem; }
+
+/* ANIMATIONS USING SCROLLREVEAL */
+.animate-fade { opacity: 0; }
+.animate-fade-delay { opacity: 0; }
+.animate-slide-up { opacity: 0; transform: translateY(50px); }
+.animate-slide-up-delay { opacity: 0; transform: translateY(50px); }
+.animate-scale-hover { transition: transform 0.3s; }
+
 /* Hero animations */
 .animate-fade { opacity: 0; transform: translateY(20px); transition: 1s ease; }
 .animate-fade-delay { transition-delay: 0.3s; }
