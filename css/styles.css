@@ -213,3 +213,10 @@ body {
 .buy-button:hover {
   background: #e55a00;
 }
+.animate-fade,
+.animate-up,
+.animate-fade-delay,
+.animate-up-delay,
+.animate-scale-hover {
+  visibility: hidden;
+}
