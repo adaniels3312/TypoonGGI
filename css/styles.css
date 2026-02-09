@@ -184,3 +184,24 @@ nav a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+/* ---------------- Scroll Animations ---------------- */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+/* ---------------- Nav scroll effect ---------------- */
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  if(window.scrollY > 50){
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
