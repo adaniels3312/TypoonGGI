@@ -55,7 +55,6 @@
         </p>
     </section>
 
-
     <!-- NEW ARRIVALS -->
     <section class="section-wrapper">
         <p class="section-sub animate-up">
@@ -64,7 +63,6 @@
 
         <div class="grid">
 
-            <!-- ITEM 1 -->
             <div class="item animate-scale-hover">
                 <img src="images/GGIsweaterblue.jpg" alt="GGI Long Sleeve Sweater">
                 <div class="info">
@@ -77,18 +75,16 @@
                 </a>
             </div>
 
-            <!-- ITEM 2 -->
             <div class="item animate-scale-hover">
                 <img src="images/RedGGI.jpg" alt="GGI">
                 <div class="info">
                     <h2>Designed to be worn, not explained</h2>
                 </div>
-                <a class="buy-button" href="#" target="_blank">
+                <a class="buy-button" href="#">
                     Enter the Drop
                 </a>
             </div>
 
-            <!-- ITEM 3 -->
             <div class="item animate-scale-hover">
                 <img src="images/RAWBACK.jpg" alt="Hoodie">
                 <div class="info">
@@ -101,7 +97,6 @@
                 </a>
             </div>
 
-            <!-- ITEM 4 -->
             <div class="item animate-scale-hover">
                 <img src="images/doormatt3.jpg" alt="GGI Welcome Doormat">
                 <div class="info">
@@ -114,7 +109,6 @@
                 </a>
             </div>
 
-            <!-- ITEM 5 -->
             <div class="item animate-scale-hover">
                 <img src="images/Duck Brown-Model Front.png" alt="Jacket">
                 <div class="info">
@@ -131,53 +125,50 @@
         </div>
     </section>
 
-
     <script src="js/main.js"></script>
-    // ScrollReveal global config
-    ScrollReveal({
-    distance: '60px',
-    duration: 900,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: false
-    });
 
-    // Fade in (hero title)
-    ScrollReveal().reveal('.animate-fade', {
-    opacity: 0,
-    origin: 'bottom'
-    });
+    <!-- ScrollReveal Config -->
+    <script>
+        ScrollReveal({
+            distance: '60px',
+            duration: 900,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            reset: false
+        });
 
-    // Fade in with delay
-    ScrollReveal().reveal('.animate-fade-delay', {
-    opacity: 0,
-    origin: 'bottom',
-    delay: 300
-    });
+        ScrollReveal().reveal('.animate-fade', {
+            opacity: 0,
+            origin: 'bottom'
+        });
 
-    // Slide up sections
-    ScrollReveal().reveal('.animate-up', {
-    opacity: 0,
-    origin: 'bottom',
-    interval: 120
-    });
+        ScrollReveal().reveal('.animate-fade-delay', {
+            opacity: 0,
+            origin: 'bottom',
+            delay: 300
+        });
 
-    // Optional delayed slide up
-    ScrollReveal().reveal('.animate-up-delay', {
-    opacity: 0,
-    origin: 'bottom',
-    delay: 200
-    });
+        ScrollReveal().reveal('.animate-up', {
+            opacity: 0,
+            origin: 'bottom',
+            interval: 120
+        });
 
-    // Product cards / scale items
-    ScrollReveal().reveal('.animate-scale-hover', {
-    scale: 0.92,
-    opacity: 0,
-    interval: 120
-    });
-    ScrollReveal().reveal('.section-wrapper', {
-    beforeReveal: el => el.classList.add('scene-active')
-    });
+        ScrollReveal().reveal('.animate-up-delay', {
+            opacity: 0,
+            origin: 'bottom',
+            delay: 200
+        });
 
+        ScrollReveal().reveal('.animate-scale-hover', {
+            scale: 0.92,
+            opacity: 0,
+            interval: 120
+        });
+
+        ScrollReveal().reveal('.section-wrapper', {
+            beforeReveal: el => el.classList.add('scene-active')
+        });
+    </script>
 
 </body>
 
