@@ -4,87 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tony Typoon • Bio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Tony Typoon • Visionary Entrepreneur</title>
+    <link rel="stylesheet" href="css/bio-styles.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
     <!-- NAVIGATION -->
-    <nav class="nav-bar">
+    <nav class="bio-nav">
+        <div class="logo">TT</div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Bio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="collective.html">Collective</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="nav-ant"></div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="hero-bio">
-        <video class="header-video" autoplay muted loop playsinline>
-            <source src="images/TYheader.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay">
-            <h1 class="header-title animate-fade">Tony Typoon</h1>
-            <p class="header-sub animate-fade-delay">Entrepreneur. Designer. Culture Curator.</p>
+    <header class="bio-hero">
+        <div class="hero-content">
+            <h1 class="animate-fade">Tony Typoon</h1>
+            <p class="animate-fade-delay">Entrepreneur | Designer | Global Fashion Changemaker</p>
+            <a href="#mission" class="cta-btn animate-fade-delay-2">Join the Movement</a>
         </div>
+        <div class="hero-background"></div>
     </header>
 
-    <!-- BIO INTRO -->
-    <section class="bio-intro animate-up">
-        <div class="bio-container">
-            <div class="bio-image">
-                <img src="images/peezy58.JPG" alt="Tony Typoon">
+    <!-- MISSION SECTION -->
+    <section id="mission" class="mission-section">
+        <h2 class="animate-slide-up">My Mission</h2>
+        <p class="animate-slide-up-delay">
+            I’m driven by a “Gotta Get It” mindset — creating fashion that respects the planet and empowers
+            creators. Sustainability, authenticity, and strong identity aren’t trends — they are principles.
+        </p>
+        <div class="mission-grid">
+            <div class="mission-card animate-scale-hover">
+                <h3>Global Change</h3>
+                <p>Designing eco-conscious fashion that challenges norms and inspires communities.</p>
             </div>
-            <div class="bio-text">
-                <h2>Who I Am</h2>
-                <p>
-                    I’m Tony Typoon, a creative entrepreneur and graphic designer based in Chattanooga, TN. I’m obsessed
-                    with building brands that live at the intersection of street culture, identity, and high-energy
-                    design.
-                    Every visual, every drop, every concept carries intention and purpose — it’s more than a product;
-                    it’s
-                    a movement.
-                </p>
-                <p>
-                    Through <strong>Typoon Industries</strong> and the <strong>GGI Collective</strong>, I aim to empower
-                    creators and hustlers to express themselves authentically, elevate their brands, and leave a mark on
-                    culture.
-                </p>
-                <a href="contact.html" class="cta-button animate-fade-hover">Work With Me</a>
+            <div class="mission-card animate-scale-hover">
+                <h3>Integrity</h3>
+                <p>Building brands and products that are honest, meaningful, and culturally impactful.</p>
+            </div>
+            <div class="mission-card animate-scale-hover">
+                <h3>Entrepreneurial Mindset</h3>
+                <p>Every project, every drop, every campaign is rooted in hustle, vision, and bold action.</p>
             </div>
         </div>
     </section>
 
-    <!-- PHILOSOPHY SECTION -->
-    <section class="bio-philosophy animate-up">
-        <h2>Philosophy</h2>
-        <div class="philosophy-cards">
-            <div class="card animate-scale-hover">
-                <h3>Culture-First</h3>
-                <p>Every project I touch is rooted in authentic culture, not trends.</p>
-            </div>
-            <div class="card animate-scale-hover">
-                <h3>Identity Matters</h3>
-                <p>Your brand is your story. I help you tell it with visuals that resonate.</p>
-            </div>
-            <div class="card animate-scale-hover">
-                <h3>Energy & Intention</h3>
-                <p>From design to launch, I approach everything with focus, passion, and purpose.</p>
+    <!-- ABOUT / BIO SECTION -->
+    <section id="about" class="about-section">
+        <div class="bio-card animate-flip-hover">
+            <div class="bio-card-inner">
+                <div class="bio-front">
+                    <img src="images/peezy58.JPG" alt="Tony Typoon">
+                    <h3>Tony Typoon</h3>
+                    <span>Hover to learn more</span>
+                </div>
+                <div class="bio-back">
+                    <h3>About Me</h3>
+                    <p>
+                        Entrepreneur, designer, and culture-builder. I create with identity, purpose, and energy at
+                        the forefront. GGI is more than a brand — it’s a mindset that drives action and innovation.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT CTA -->
-    <section class="bio-contact animate-fade">
-        <h2>Let’s Create Something Iconic</h2>
-        <p>Whether it’s a brand, a drop, or a full-scale creative vision, I’m ready to collaborate.</p>
-        <a href="contact.html" class="cta-button animate-fade-hover">Get In Touch</a>
+    <!-- PROJECTS / HIGHLIGHTS -->
+    <section id="projects" class="projects-section">
+        <h2 class="animate-slide-up">Projects & Drops</h2>
+        <div class="projects-grid">
+            <div class="project-card animate-scale-hover">
+                <img src="images/plaidggitee.jpg" alt="Plaid Tee">
+                <h4>Plaid GGI Tee</h4>
+                <p>Streetwear that tells a story.</p>
+            </div>
+            <div class="project-card animate-scale-hover">
+                <img src="images/ggichampphonecase.jpg" alt="Phone Case">
+                <h4>GGI Tech Accessories</h4>
+                <p>Bold design meets function.</p>
+            </div>
+            <div class="project-card animate-scale-hover">
+                <img src="images/FolderGGIhoodie.jpg" alt="Hoodie">
+                <h4>Signature Hoodie Drop</h4>
+                <p>Limited edition, high-energy, culture-driven.</p>
+            </div>
+        </div>
     </section>
 
-    <script src="js/main.js"></script>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <h2 class="animate-slide-up">Get In Touch</h2>
+        <p class="animate-slide-up-delay">Collaborate, join the collective, or just say hi.</p>
+        <a href="mailto:tony@typoonindustries.com" class="cta-btn animate-fade-hover">Email Me</a>
+    </section>
+
+    <script src="js/bio-main.js"></script>
 </body>
 
 </html>
