@@ -769,3 +769,127 @@ body {
   opacity: 0.9;
   transform: translateY(-5px);
 }
+
+/* ================= DESKTOP ADJUSTMENTS ================= */
+@media (min-width: 1024px) {
+
+  /* Header title scales nicely on larger screens */
+  .header-title {
+    font-size: 7rem;
+    /* larger, elegant presence */
+    white-space: nowrap;
+  }
+
+  /* GGI Section */
+  .ggi-title {
+    font-size: 3rem;
+  }
+
+  .ggi-logo-row {
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .ggi-logo-box {
+    width: 140px;
+    height: 140px;
+    padding: 15px;
+  }
+
+  .ggi-categories .cat {
+    font-size: 1.1rem;
+    padding: 12px 22px;
+  }
+
+  /* Organic Section */
+  .organic-title {
+    font-size: 3.5rem;
+  }
+
+  .organic-text {
+    font-size: 1.25rem;
+  }
+
+  .organic-sub {
+    font-size: 1.1rem;
+  }
+
+  .organic-button {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+  }
+
+  /* About Section */
+  .about-section {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .about-card {
+    width: 380px;
+    height: 500px;
+  }
+
+  /* Vinyl orbit */
+  .vinyl-orbit {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+/* ================= LARGE DESKTOP ================= */
+@media (min-width: 1440px) {
+  .header-title {
+    font-size: 8rem;
+  }
+
+  .ggi-title {
+    font-size: 3.5rem;
+  }
+
+  .ggi-logo-box {
+    width: 160px;
+    height: 160px;
+  }
+
+  .organic-title {
+    font-size: 4rem;
+  }
+
+  .organic-text {
+    font-size: 1.35rem;
+  }
+
+  .about-card {
+    width: 420px;
+    height: 540px;
+  }
+
+  .vinyl-orbit {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* ================= GENERAL SCALING ================= */
+/* Ensures video header always fills viewport */
+.video-header,
+.header-video {
+  max-height: 100vh;
+}
+
+/* Navigation links scale on hover */
+.nav-bar a {
+  font-size: clamp(1rem, 1.1vw, 1.25rem);
+}
+
+/* Spiral text scales with viewport */
+.spiral-text {
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+/* Flame animation size adapts to screen */
+.blue-flame-anim {
+  width: clamp(150px, 15vw, 250px);
+  height: clamp(150px, 15vw, 250px);
+}
