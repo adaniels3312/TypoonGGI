@@ -1445,7 +1445,7 @@ body {
 /* CARD */
 .deal-card {
   position: relative;
-  background: #111;
+  background: #0bca27;
   border-radius: 20px;
   overflow: hidden;
   transition: 0.4s ease;
