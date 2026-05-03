@@ -1479,6 +1479,116 @@ body {
   transform: scale(1.1);
 }
 
+/* PROMO BANNER */
+.promo-banner {
+  position: relative;
+  width: 100%;
+  padding: 30px 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 16px;
+
+  background: linear-gradient(270deg, #ff4d6d, #ff9a9e, #fad0c4, #ff4d6d);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Moving gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glow pulse effect */
+.promo-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.25), transparent 70%);
+  animation: pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  animation: floatText 3s ease-in-out infinite;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Floating text animation */
+@keyframes floatText {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.promo-banner::after {
+  content: "✨ ✨ ✨";
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-align: center;
+  font-size: 18px;
+  animation: sparkleMove 6s linear infinite;
+}
+
+@keyframes sparkleMove {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
 /* INFO */
 .deal-info {
   padding: 20px;
